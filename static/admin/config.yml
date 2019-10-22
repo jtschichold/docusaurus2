@@ -24,5 +24,12 @@ collections:
         name: "sidebar"
         file: "docs/sidebars.yml"
         fields:
-          - {label: Category, name: category, widget: string}
+          - label: Sidebar 
+            name: SIDEBAR
+            widget: list
+            fields:
+              - {label: Category, name: category, widget: string}
+              - label: IDs 
+                name: ids
+                widget: list                  
     
