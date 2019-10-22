@@ -1,9 +1,14 @@
 SIDEBAR:
-  - category: "Docusaurus"
+  - category: Docusaurus
     ids:
       - doc1
       - doc2
       - doc3
-  - category: "Features"
+  - category: Features
     ids:
       - mdx
+  - category: Steve
+    ids:
+      - ballmer1
+      - ballmer2
+      - ballmer3
