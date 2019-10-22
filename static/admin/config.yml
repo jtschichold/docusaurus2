@@ -2,9 +2,9 @@ backend:
   name: github
   branch: master
   repo: sserrata/docusaurus2
+  open_authoring: true
 publish_mode: editorial_workflow
 media_folder: "docs/assets"
-open_authoring: true
 collections:
   - name: "docs" # Used in routes, e.g., /admin/collections/blog
     label: "Docs" # Used in the UI
