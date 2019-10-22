@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master
-  repo: sserrata/developers.panw-docs
+  repo: sserrata/docusaurus2
 publish_mode: editorial_workflow
 media_folder: "docs/assets"
 collections:
@@ -15,3 +15,18 @@ collections:
       - {label: "title", name: "title", widget: "string"}
       - {label: "sidebar_label", name: "sidebar_label", widget: "string"}
       - {label: "Content", name: "body", widget: "markdown"}
+  - name: "sidebars"
+    label: "Sidebars"
+    create: false
+    extension: yml
+    files:
+      - label: "Sidebars YAML"
+        name: "sidebars"
+        file: "docs/sidebars.yml"
+        fields:
+          - {label: Cateogry, name: category, widget: string}
+          - label: IDs
+            name: ids
+            widget: list
+            fields:
+              - {label: id, name: id, widget: string}

@@ -5,9 +5,11 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+const yaml = require("js-yaml");
+const fs = require("fs");
+
+const docs = yaml.safeLoad(fs.readFileSync("docs/sidebars.yml", "utf8"));
+
 module.exports = {
-  docs: {
-    Docusaurus: ["doc1", "doc2", "doc3"],
-    Features: ["mdx"]
-  }
+  docs: docs
 };
