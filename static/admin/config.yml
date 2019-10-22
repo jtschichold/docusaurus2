@@ -4,6 +4,7 @@ backend:
   repo: sserrata/docusaurus2
 publish_mode: editorial_workflow
 media_folder: "docs/assets"
+open_authoring: true
 collections:
   - name: "docs" # Used in routes, e.g., /admin/collections/blog
     label: "Docs" # Used in the UI
@@ -17,16 +18,15 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
   - name: "sidebars"
     label: "Sidebars"
-    create: false
-    extension: yml
     files:
-      - label: "Sidebars YAML"
-        name: "sidebars"
+      - label: "Sidebar"
+        name: "sidebar"
         file: "docs/sidebars.yml"
         fields:
-          - {label: Cateogry, name: category, widget: string}
+          - {label: Category, name: category, widget: string}
           - label: IDs
             name: ids
             widget: list
             fields:
-              - {label: id, name: id, widget: string}
+              - {label: Name, name: name, widget: string}
+    

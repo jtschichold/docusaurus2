@@ -8,8 +8,17 @@
 const yaml = require("js-yaml");
 const fs = require("fs");
 
-const docs = yaml.safeLoad(fs.readFileSync("docs/sidebars.yml", "utf8"));
+const sidebars = yaml.safeLoad(fs.readFileSync("docs/sidebars.yml", "utf8"));
+
+var items = {};
+sidebars.map(item => {
+  const category = item.category;
+  const ids = item.ids;
+  items[category] = ids;
+});
+
+console.log(items);
 
 module.exports = {
-  docs: docs
+  docs: items
 };
