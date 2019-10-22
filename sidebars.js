@@ -8,7 +8,9 @@
 const yaml = require("js-yaml");
 const fs = require("fs");
 
-const sidebars = yaml.safeLoad(fs.readFileSync("docs/sidebars.yml", "utf8"));
+const sidebars = yaml.safeLoad(fs.readFileSync("docs/sidebars.yml", "utf8"))[
+  "SIDEBAR"
+];
 
 var items = {};
 sidebars.map(item => {

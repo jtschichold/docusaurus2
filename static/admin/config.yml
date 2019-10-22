@@ -18,15 +18,11 @@ collections:
       - {label: "Content", name: "body", widget: "markdown"}
   - name: "sidebars"
     label: "Sidebars"
+    identifier_field: category
     files:
       - label: "Sidebar"
         name: "sidebar"
         file: "docs/sidebars.yml"
         fields:
           - {label: Category, name: category, widget: string}
-          - label: IDs
-            name: ids
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
     
