@@ -7,6 +7,7 @@ SIDEBAR:
   - category: Features
     ids:
       - mdx
+      - mdown
   - category: Steve
     ids:
       - ballmer1
