@@ -3,6 +3,7 @@ backend:
   branch: master
   repo: sserrata/docusaurus2
   open_authoring: true
+  squash_merges: true
 publish_mode: editorial_workflow
 media_folder: "docs/assets"
 collections:
